@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "54419721522",
+    "project_id": "x-chat-2024",
+    "storage_bucket": "x-chat-2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54419721522:android:cd63091ed794a2f9c15b2b",
+        "android_client_info": {
+          "package_name": "com.example.whats_app_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB1I1GaA2MNmcCJkG6xyWwkfQXIQPG9Gw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
