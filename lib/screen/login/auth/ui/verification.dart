@@ -2,7 +2,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:whats_app_clone/common/extension/custom_theme_extension.dart';
-import 'package:whats_app_clone/screen/login/auth/ui/user_info_page.dart';
 import '../../../../widgets/custom_text_fields.dart';
 import '../../widgets/custom_icon_button.dart';
 import '../controller/auth_controller.dart';
@@ -54,14 +53,14 @@ class _VerificationPageState extends ConsumerState<VerificationPage> {
     );
   }
 
-  void _navigateToUserInfoPage() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => const UserInfoPage(), // افترضنا وجود صفحة دعم هنا
-      ),
-    );
-  }
+  // void _navigateToUserInfoPage() {
+  //   Navigator.push(
+  //     context,
+  //     MaterialPageRoute(
+  //       builder: (context) => const UserInfoPage(), // افترضنا وجود صفحة دعم هنا
+  //     ),
+  //   );
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -158,15 +157,15 @@ class _VerificationPageState extends ConsumerState<VerificationPage> {
                 ),
               ],
             ),
-            const SizedBox(height: 20),
-            if (_codeNotReceived) // يظهر هذا القسم بعد انتهاء المؤقت
-              TextButton(
-                onPressed: _navigateToUserInfoPage,
-                child: Text(
-                  'Didn\'t receive the code? Get help',
-                  style: TextStyle(color: context.theme!.blueColor),
-                ),
-              ),
+            // const SizedBox(height: 20),
+            // if (_codeNotReceived) // يظهر هذا القسم بعد انتهاء المؤقت
+            //   TextButton(
+            //     onPressed: _navigateToUserInfoPage,
+            //     child: Text(
+            //       'Didn\'t receive the code? Get help',
+            //       style: TextStyle(color: context.theme!.blueColor),
+            //     ),
+            //   ),
           ],
         ),
       ),
@@ -174,18 +173,3 @@ class _VerificationPageState extends ConsumerState<VerificationPage> {
   }
 }
 
-// class SupportPage extends StatelessWidget {
-//   const SupportPage({super.key});
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(
-//         title: const Text("Support Page"),
-//       ),
-//       body: Center(
-//         child: const Text("Help and Support"),
-//       ),
-//     );
-//   }
-// }
